@@ -1,0 +1,8 @@
+﻿@page "/markdown"
+@namespace MarkdownReader.Pages
+
+
+@if (!string.IsNullOrEmpty(GitPath))
+{
+    @((MarkupString)Body)
+}
